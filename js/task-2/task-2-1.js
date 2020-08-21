@@ -1,6 +1,7 @@
 const getItemsString = function (array) {
   "use strict";
   let result = "";
+  // for (ініціалізація, умова, пост  - вираз"збільшуємо або змнешуємо лічильник")
   for (let i = 0; i < array.length; i += 1) {
     result += `${i + 1} - ${array[i]}\n`;
   }
