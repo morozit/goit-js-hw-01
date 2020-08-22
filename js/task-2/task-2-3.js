@@ -1,12 +1,14 @@
 function findLongestWord(string = "") {
   const words = string.trim().split(/\W+/);
-  let longestWord = "";
+  let longestWord = [0];
 
   for (const word of words) {
     if (word.length > longestWord.length) {
       longestWord = word;
     }
   }
+  // TODO: виводиться найдовше слово в речені. та виводить їх всіх з великої літери
+  // return (longestWord = longestWord.slice(0).toUpperCase());
   return longestWord;
 }
 
