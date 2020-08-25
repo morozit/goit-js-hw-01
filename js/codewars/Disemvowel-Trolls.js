@@ -1,5 +1,5 @@
 function disemvowel(str) {
-  return str.replace(/[aeiou]/gi, "");
+  return str.replace(/[aeiou]/gi, "-");
 }
 
 console.log(disemvowel("Moroz Roman"));
