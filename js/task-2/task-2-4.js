@@ -18,3 +18,17 @@ console.log(
   formatString("Vestibulum facilisis, purus nec pulvinar iaculis.", 30)
 );
 // 'Vestibulum facilisis, purus ne...'
+
+// TODO: 2 variant
+function formatString(string, maxLength = 40) {
+  // Write code under this line
+  const stringLength = string.split("");
+  if (stringLength.length > maxLength) {
+    stringLength.length = maxLength;
+    return stringLength.join("") + "...";
+  } else if (
+    (stringLength.length = maxLength || stringLength.length < maxLength)
+  ) {
+    return stringLength.join("");
+  }
+}
