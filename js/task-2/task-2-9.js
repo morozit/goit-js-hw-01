@@ -1,4 +1,5 @@
 console.log("      !!!!!!!!!!-VARIANT-1");
+
 function isLoginValid(login, min = 4, max = 16) {
   // Write code under this line
   if (login.length >= min && login.length <= max) {
